@@ -1,0 +1,23 @@
+title: Queer Rights
+description: Comunidade Queer Rights - Luta pelos direitos LGBTQIA+
+baseurl: ""
+url: ""
+
+# Configurações do GitHub Pages
+github: [metadata]
+# Plugins opcionais (descomente se necessário)
+# plugins:
+#   - jekyll-feed
+#   - jekyll-seo-tag
+
+# Configurações de build
+markdown: kramdown
+highlighter: rouge
+
+# Configurações de autor
+author:
+  name: Queer Rights Community
+
+# Configurações de redes sociais
+social:
+  signal: "#" # Link do grupo Signal será configurado na página
