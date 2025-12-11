@@ -35,8 +35,8 @@
     
     <nav class="language-selector" role="navigation" aria-label="{% if page.lang == 'en' %}Language selector{% elsif page.lang == 'es' %}Selector de idioma{% else %}Seletor de idioma{% endif %}">
         <div class="lang-container">
-            <a href="{{ '/' | relative_url }}" class="lang-link {% if page.lang == 'pt' or page.lang == nil %}active{% endif %}" aria-label="Português">🇧🇷 PT</a>
-            <a href="{{ '/en/' | relative_url }}" class="lang-link {% if page.lang == 'en' %}active{% endif %}" aria-label="English">🇺🇸 EN</a>
+            <a href="{{ '/' | relative_url }}" class="lang-link {% if page.lang == 'en' or page.lang == nil %}active{% endif %}" aria-label="English">🇺🇸 EN</a>
+            <a href="{{ '/pt/' | relative_url }}" class="lang-link {% if page.lang == 'pt' %}active{% endif %}" aria-label="Português">🇧🇷 PT</a>
             <a href="{{ '/es/' | relative_url }}" class="lang-link {% if page.lang == 'es' %}active{% endif %}" aria-label="Español">🇪🇸 ES</a>
         </div>
     </nav>
