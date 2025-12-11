@@ -1,7 +1,9 @@
 title: Queer Rights
 description: Comunidade Queer Rights - Luta pelos direitos LGBTQIA+
-baseurl: "/QueerRights-web-platform"
-url: "https://travahacker.github.io"
+# baseurl será vazio quando usar domínio customizado
+baseurl: ""
+# URL será definida automaticamente pelo GitHub Pages quando CNAME estiver configurado
+url: "https://queerrights.codigonaobinario.org"
 
 # Configurações do GitHub Pages
 # Não usar metadata do GitHub que pode aplicar tema padrão
