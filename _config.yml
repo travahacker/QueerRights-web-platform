@@ -6,21 +6,21 @@ url: "https://travahacker.github.io"
 # Configurações do GitHub Pages
 github: [metadata]
 
-# Desabilitar tema padrão do GitHub Pages
+# Desabilitar tema padrão do GitHub Pages completamente
 remote_theme: null
 theme: null
 
-# Plugins opcionais (descomente se necessário)
-# plugins:
-#   - jekyll-feed
-#   - jekyll-seo-tag
+# Plugins - vazio para não usar plugins padrão
+plugins: []
 
 # Configurações de build
 markdown: kramdown
 highlighter: rouge
-# Não usar tema padrão - usar layout customizado
-theme: null
-plugins: []
+
+# Forçar uso de layouts locais
+layouts_dir: _layouts
+includes_dir: _includes
+data_dir: _data
 
 # Configurações de autor
 author:

@@ -41,10 +41,15 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
         run: |
+          echo "Building Jekyll site..."
           bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --verbose
+          echo "Build complete. Checking _site directory:"
           ls -la _site/
+          echo "Checking if index.html exists:"
+          cat _site/index.html | head -30
         env:
           JEKYLL_ENV: production
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
