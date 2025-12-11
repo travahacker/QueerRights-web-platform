@@ -5,7 +5,7 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches:
-      - cursor/create-queer-rights-site-255d
+      - queer-rights-site
       - main
       - master
 
