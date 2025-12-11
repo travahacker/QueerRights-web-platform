@@ -4,7 +4,8 @@ baseurl: "/QueerRights-web-platform"
 url: "https://travahacker.github.io"
 
 # Configurações do GitHub Pages
-github: [metadata]
+# Não usar metadata do GitHub que pode aplicar tema padrão
+# github: [metadata]
 
 # Desabilitar tema padrão do GitHub Pages completamente
 remote_theme: null
