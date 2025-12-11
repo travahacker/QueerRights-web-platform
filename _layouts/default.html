@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="{% if page.lang == 'en' %}en{% elsif page.lang == 'es' %}es{% else %}pt-BR{% endif %}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +31,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    <a href="#main-content" class="skip-link">{% if page.lang == 'en' %}Skip to main content{% elsif page.lang == 'es' %}Saltar al contenido principal{% else %}Pular para o conteúdo principal{% endif %}</a>
+    
+    <nav class="language-selector" role="navigation" aria-label="{% if page.lang == 'en' %}Language selector{% elsif page.lang == 'es' %}Selector de idioma{% else %}Seletor de idioma{% endif %}">
+        <div class="lang-container">
+            <a href="{{ '/' | relative_url }}" class="lang-link {% if page.lang == 'pt' or page.lang == nil %}active{% endif %}" aria-label="Português">🇧🇷 PT</a>
+            <a href="{{ '/en/' | relative_url }}" class="lang-link {% if page.lang == 'en' %}active{% endif %}" aria-label="English">🇺🇸 EN</a>
+            <a href="{{ '/es/' | relative_url }}" class="lang-link {% if page.lang == 'es' %}active{% endif %}" aria-label="Español">🇪🇸 ES</a>
+        </div>
+    </nav>
     
     <div class="container">
         <main id="main-content">
@@ -40,9 +48,9 @@
     </div>
     
     <footer class="footer" role="contentinfo">
-        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. Feito com ❤️ pela comunidade.</p>
+        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. {% if page.lang == 'en' %}Made with ❤️ by the community{% elsif page.lang == 'es' %}Hecho con ❤️ por la comunidad{% else %}Feito com ❤️ pela comunidade{% endif %}.</p>
         <p class="footer-links">
-            <a href="#main-content" aria-label="Voltar ao topo">↑ Voltar ao topo</a>
+            <a href="#main-content" aria-label="{% if page.lang == 'en' %}Back to top{% elsif page.lang == 'es' %}Volver arriba{% else %}Voltar ao topo{% endif %}">↑ {% if page.lang == 'en' %}Back to top{% elsif page.lang == 'es' %}Volver arriba{% else %}Voltar ao topo{% endif %}</a>
         </p>
     </footer>
 </body>

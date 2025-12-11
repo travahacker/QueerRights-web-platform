@@ -38,6 +38,10 @@ social:
 locale: pt-BR
 timezone: America/Sao_Paulo
 
+# Configurações de idiomas suportados
+languages: ["pt", "en", "es"]
+default_lang: pt
+
 # Configurações de exibição
 show_excerpts: false
 paginate: 5
