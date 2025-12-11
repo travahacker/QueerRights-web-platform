@@ -1,10 +1,13 @@
 title: Queer Rights
 description: Comunidade Queer Rights - Luta pelos direitos LGBTQIA+
-baseurl: ""
-url: "" # Configure com a URL do seu site no GitHub Pages (ex: https://seu-usuario.github.io)
+baseurl: "/QueerRights-web-platform"
+url: "https://travahacker.github.io"
 
 # Configurações do GitHub Pages
 github: [metadata]
+
+# Desabilitar tema padrão do GitHub Pages
+remote_theme: null
 
 # Plugins opcionais (descomente se necessário)
 # plugins:
@@ -14,7 +17,9 @@ github: [metadata]
 # Configurações de build
 markdown: kramdown
 highlighter: rouge
-theme: null # Usando layout customizado
+# Não usar tema padrão - usar layout customizado
+theme: null
+plugins: []
 
 # Configurações de autor
 author:
