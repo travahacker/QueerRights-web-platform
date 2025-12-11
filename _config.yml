@@ -8,6 +8,7 @@ github: [metadata]
 
 # Desabilitar tema padrão do GitHub Pages
 remote_theme: null
+theme: null
 
 # Plugins opcionais (descomente se necessário)
 # plugins:
@@ -39,3 +40,6 @@ timezone: America/Sao_Paulo
 # Configurações de exibição
 show_excerpts: false
 paginate: 5
+
+# Excluir README.md do build para evitar conflito com index.html
+exclude: ["README.md"]
